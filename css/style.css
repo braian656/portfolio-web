@@ -257,16 +257,17 @@ li{
 }
 .content-projects{
   padding-top: 50px;
-  height: 100vh;
+/*   height: 100vh; */
   position: relative;
 }
 .background-txt{
   position: absolute;
   top: 30%;
   left: 40px;
+  
   transform: translateY(-50%);
   font-weight: 900;
-  font-size: clamp(5em, 5vw, 14em);
+  font-size: clamp(3em, 5vw, 14em);
   color: var(--clr-4);  /* Color y opacidad del texto de fondo */
   pointer-events: none;
 }
@@ -278,7 +279,7 @@ li{
 
 .projects{
   padding: 6px;
-  height: 60vh;
+/*   height: 60vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,17 +290,19 @@ li{
   border-top:  2px  dotted var(--clr-5);
   border-bottom: 2px dotted var(--clr-5);
   width: 200%;
-  height: 50vh;
+/*   height: 50vh; */
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  padding: 7rem 0;
 }
 
 
 .card-project{
   cursor: pointer;
 /*   margin: 0 10px; */
-margin: 0 -30px;
+  margin: 0 -30px;
   border-radius: 4px;
   padding: 6px;
   width: 90%;
@@ -310,6 +313,7 @@ margin: 0 -30px;
   background-color: var(--clr-5);
   transition: var(--transition-2);
   position: relative;
+
 }
 
 .card-project::before{
@@ -382,9 +386,16 @@ margin: 0 -30px;
   color: var(--clr-7);
 }
 
+
 footer{
   height: 10vh;
   border-top: 2px solid var(--clr-4);
+  display: grid;
+  place-content: center;
+}
+
+footer .name{
+   color: var(--clr-2);
 }
 
 @media (width > 620px){
@@ -434,14 +445,24 @@ footer{
 }
 
 @media (width > 420px){
+  .background-txt {
+    position: absolute;
+    top: 15%;
+    left: 13px;
+    transform: translateY(-50%);
+    font-weight: 900;
+    font-size: clamp(3em, 5vw, 14em);
+    color: var(--clr-4);
+    pointer-events: none;
+}
    .card-project{
-    margin: 0 10px;
+    margin: 10px;
     width: 320px;
     cursor: pointer;
   }
   .card-img{
   overflow: hidden;
-  height: 30vh;
+  height: auto;
 }
 
 }
