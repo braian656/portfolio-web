@@ -260,17 +260,7 @@ li{
 /*   height: 100vh; */
   position: relative;
 }
-.background-txt{
-  position: absolute;
-  top: 30%;
-  left: 40px;
-  
-  transform: translateY(-50%);
-  font-weight: 900;
-  font-size: clamp(3em, 5vw, 14em);
-  color: var(--clr-4);  /* Color y opacidad del texto de fondo */
-  pointer-events: none;
-}
+
 .content-projects .job{
   margin-left: 0.625rem;
   font-size: clamp(1rem, 5vw, 26px);
@@ -295,13 +285,11 @@ li{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 7rem 0;
+  padding: 2rem 0;
 }
 
 
 .card-project{
-  cursor: pointer;
-/*   margin: 0 10px; */
   margin: 0 -30px;
   border-radius: 4px;
   padding: 6px;
@@ -324,13 +312,14 @@ li{
   bottom: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: -2;
 /*   background-color: rgba(255, 255, 6, 0.5); */
 
 
 }
 
 .card-project.active{
-  z-index: 120;
+  z-index: 100;
 }
 
 .card-project.active::before {
@@ -345,8 +334,19 @@ li{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
+  padding: 0 6px;
 }
-
+.card-txt .description{
+  width: 100%;
+}
+.card-txt .description a{
+  cursor: pointer;
+}
+.card-txt .description a{
+  cursor: pointer;
+  font-size: 1.2rem;
+}
 .card-project .title-txt{
   font-weight: 800;
   color: var(--clr-1);
@@ -385,7 +385,6 @@ li{
   font-size: 1rem;
   color: var(--clr-7);
 }
-
 
 footer{
   height: 10vh;
@@ -458,16 +457,17 @@ footer .name{
    .card-project{
     margin: 10px;
     width: 320px;
-    cursor: pointer;
   }
   .card-img{
   overflow: hidden;
   height: auto;
 }
 
+
 }
 
 @media (width > 520px){
+
   .container-navbar{
     padding: 0 0.5rem;
     width: 90%;
