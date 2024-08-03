@@ -3,7 +3,7 @@ const project = [
 	{
 		id: 1,
 		name: 'Landing Page',
-		img: 'img/landing-page.png',
+		img: 'img/landing-page.webp',
 		txt: 'Landing Page, Responsiva con un poco de funcionalidad con JS.',
 		technology: `<span><i class="fa-brands fa-html5"></i></span>
 						<span><i class="fa-brands fa-css3-alt"></i></span>
@@ -13,7 +13,7 @@ const project = [
 	{
 		id: 2,
 		name: 'Simple Blog',
-		img: 'img/Blog.png',
+		img: 'img/blog.webp',
 		txt: 'Blog con buen diseño, donde podes comentar en los post.',
 		technology: `<span><i class="fa-brands fa-html5"></i></span>
 						<span><i class="fa-brands fa-css3-alt"></i></span>
@@ -23,7 +23,7 @@ const project = [
 	{
 		id: 3,
 		name: 'Snake Game',
-		img: 'img/snake-game.png',
+		img: 'img/snake-game.webp',
 		txt: 'Clasico Snake Game',
 		technology: `<span><i class="fa-brands fa-html5"></i></span>
 						<span><i class="fa-brands fa-css3-alt"></i></span>
