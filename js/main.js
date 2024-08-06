@@ -8,7 +8,7 @@ const project = [
 		technology: `<span><i class="fa-brands fa-html5"></i></span>
 						<span><i class="fa-brands fa-css3-alt"></i></span>
 							<span><i class="fa-brands fa-js"></i></span>`,
-		link: 'landing-page.com',
+		link: 'https://landingpage121212.netlify.app/',
 	},
 	{
 		id: 2,
@@ -18,7 +18,7 @@ const project = [
 		technology: `<span><i class="fa-brands fa-html5"></i></span>
 						<span><i class="fa-brands fa-css3-alt"></i></span>
 							<span><i class="fa-brands fa-js"></i></span>`,
-		link: 'https://ar.pinterest.com/pin/59461657574629728/',
+		link: 'https://blog121212.netlify.app/',
 	},
 	{
 		id: 3,
@@ -28,7 +28,7 @@ const project = [
 		technology: `<span><i class="fa-brands fa-html5"></i></span>
 						<span><i class="fa-brands fa-css3-alt"></i></span>
 							<span><i class="fa-brands fa-js"></i></span>`,
-		link: 'snake.com',
+		link: 'https://snakegame121212.netlify.app/',
 	}
 
 ];
