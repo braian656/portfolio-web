@@ -24,16 +24,36 @@ const project = [
 		id: 3,
 		name: 'Snake Game',
 		img: 'img/snake-game.webp',
-		txt: 'Snake game con clasico hecho con javascript',
+		txt: 'Clasico Snake Game hecho con JS',
 		technology: `<span><i class="fa-brands fa-html5"></i></span>
 						<span><i class="fa-brands fa-css3-alt"></i></span>
 							<span><i class="fa-brands fa-js"></i></span>`,
 		link: 'https://snakegame121212.netlify.app/',
+	},
+	{
+		id: 3,
+		name: 'E-commerce',
+		img: 'img/e-commerce.png',
+		txt: 'E-commerce, con funcionalidades de registros',
+		technology: `<span><i class="fa-brands fa-html5"></i></span>
+						<span><i class="fa-brands fa-css3-alt"></i></span>
+							<span><i class="fa-brands fa-react"></i></span>`,
+		link: 'https://e-comm-react-project.netlify.app/',
+	},
+	{
+		id: 3,
+		name: 'Sencillo turnero',
+		img: 'img/turnero-sencillo.png',
+		txt: 'Solicitar un servicio de manera sencilla',
+		technology: `<span><i class="fa-brands fa-html5"></i></span>
+						<span><i class="fa-brands fa-css3-alt"></i></span>
+							<span><i class="fa-brands fa-react"></i></span>`,
+		link: '-',
 	}
 
 ];
 
-
+const navBarContainer = document.querySelector('.container-navbar')
 const btnToggle = document.querySelector('.btn-toggle');
 const menuNav = document.querySelector('.navbar');
 const itemNav = document.querySelectorAll('.item a');
@@ -56,6 +76,17 @@ itemNav.forEach((link, i)=>{
 document.addEventListener('DOMContentLoaded', ()=>{
 	addProject()
 	
+})
+
+document.addEventListener('scroll', ()=>{
+	const h = window.scrollY
+	const hNav = navBarContainer.offsetHeight
+
+	if(hNav < h){
+		navBarContainer.style.background = '#151515'
+	}else{
+		navBarContainer.style.background = 'transparent'
+	}
 })
 
 
@@ -123,7 +154,12 @@ function addProject(){
 
 							<div class="description">
 								<p>${item.txt}</p>
-								<a class="descr-link" href=${item.link}  target="_blank">see project</a>
+								<a 
+								class="descr-link" 
+								href=${item.link}  
+								target="_blank">
+								Ver
+								</a>
 							</div>
 						</div>
 					</article>`
@@ -134,8 +170,6 @@ function addProject(){
 	addActive()
 	
 }
-
-
 btnToggle.addEventListener('click', ()=>{
 	menuNav.classList.toggle('show')
 });

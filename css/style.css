@@ -41,6 +41,7 @@ body{
   font-family: var(--font);
   transition: var(--transition);
   scroll-behavior: smooth;
+  padding: 0 10px;
 }
 
 button{
@@ -79,13 +80,15 @@ header{
   align-items: center;
   justify-content: center;
   border: 2px solid var(--clr-4);
-  border-radius: 1.4rem;
+  border-radius: 12px;
 }
 
 
 .navbar{
+  transition: var(--transition-2);
+
   border: 2px solid var(--clr-4);
-  border-radius: 1.4rem;
+  border-radius: 12px;
   position: absolute;
   top: 82px;
   right: 0;
@@ -96,9 +99,9 @@ header{
   align-items: center;
   flex-direction: column;
   opacity: 0;
-  background-color: var(--clr-8);
+  /* background-color: var(--clr-8); */
+  background-color: var(--clr-4);
   display: none;
-  transition: var(--transition-2);
 }
 .navbar.show{
   opacity: 1;
@@ -106,6 +109,7 @@ header{
   display: flex;
 }
 .container-navbar svg{
+  cursor: pointer;
   width: 42px;
   height: 42px;
   color: var(--clr-5);
@@ -186,6 +190,7 @@ li{
 }
 .txt-about{
   width: 100%;
+  margin: 3rem 0;
 }
 .section-tech{
   display: flex;
@@ -277,8 +282,8 @@ li{
 }
 
 .inner-project{
-  border-top:  2px  dotted var(--clr-5);
-  border-bottom: 2px dotted var(--clr-5);
+  border-top: 1px solid var(--clr-3);
+  /* border-bottom: 2px dotted var(--clr-5); */
   width: 200%;
 /*   height: 50vh; */
   display: flex;
@@ -290,14 +295,12 @@ li{
 
 
 .card-project{
-  margin: 0 -30px;
+  /* margin: 10px -30px; */
+  margin: 0.625rem -30px;
   border-radius: 4px;
   padding: 6px;
   width: 90%;
-/*   width: 400px; */
-/*   height: 90%; */
-  box-shadow: 0 2px 6px 0 hsla(0 , 0%, 0%, 0.2);
-/*   box-shadow: 0 4px 6px 0 hsla(0, 0%,0%, 0.2); */
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   background-color: var(--clr-5);
   transition: var(--transition-2);
   position: relative;
@@ -320,6 +323,7 @@ li{
 
 .card-project.active{
   z-index: 100;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 .card-project.active::before {
@@ -337,6 +341,13 @@ li{
   flex-direction: column;
   padding: 0 6px;
 }
+.card-txt .card-desc{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
 .card-txt .description{
   width: 100%;
 }
@@ -350,6 +361,7 @@ li{
 .card-project .title-txt{
   font-weight: 800;
   color: var(--clr-1);
+  text-align: start;
 }
 .made-with{
   display: flex;
@@ -408,7 +420,6 @@ footer .name{
   .abs-name{
     font-weight: 600;
     margin: 0;
-    transform: rotate(-12deg);
   }
   .job{
     text-align: center;
@@ -419,6 +430,7 @@ footer .name{
   .txt-about{
     width: 70%;
     text-align: center;
+
   }
   .nav{
     margin: 0 2rem;
@@ -439,7 +451,7 @@ footer .name{
     text-align: end;
   }
   .link:hover{
-    color: var(--clr-2);
+    color: #e7e765;
   }
 }
 
@@ -454,13 +466,16 @@ footer .name{
     color: var(--clr-4);
     pointer-events: none;
 }
-   .card-project{
+  .card-project{
     margin: 10px;
     width: 320px;
   }
   .card-img{
   overflow: hidden;
   height: auto;
+}
+.card-project{
+  margin-top: 0.625rem;
 }
 
 
