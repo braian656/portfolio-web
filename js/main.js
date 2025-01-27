@@ -31,7 +31,7 @@ const project = [
 		link: 'https://snakegame121212.netlify.app/',
 	},
 	{
-		id: 3,
+		id: 4,
 		name: 'E-commerce',
 		img: 'img/e-commerce.png',
 		txt: 'E-commerce, con funcionalidades de registros',
@@ -41,7 +41,7 @@ const project = [
 		link: 'https://e-comm-react-project.netlify.app/',
 	},
 	{
-		id: 3,
+		id: 5,
 		name: 'Sencillo turnero',
 		img: 'img/turnero-sencillo.png',
 		txt: 'Solicitar un servicio de manera sencilla',
@@ -49,6 +49,16 @@ const project = [
 						<span><i class="fa-brands fa-css3-alt"></i></span>
 							<span><i class="fa-brands fa-react"></i></span>`,
 		link: '-',
+	},
+	{
+		id: 6,
+		name: 'Cart Game',
+		img: 'img/cartGame.png',
+		txt: 'Mini Juego de autos, contador, colision,etc',
+		technology: `<span><i class="fa-brands fa-html5"></i></span>
+						<span><i class="fa-brands fa-css3-alt"></i></span>
+							<span><i class="fa-brands fa-js"></i></span>`,
+		link: 'https://cart-game-js.netlify.app/',
 	}
 
 ];
@@ -98,10 +108,10 @@ cv.addEventListener('click',()=>{
 const createButtonCV = ()=>{
 	const a = document.createElement('a')
 	a.classList.add('download-cv')
-	a.href = 'CV/Braian-Carranza-CV.pdf';
+	a.href = 'CV/Braian-Carranza-CV2025.pdf';
 	a.innerHTML = '';
 	a.innerHTML = 'CV'
-	a.download = 'Braian-Carranza-CV.pdf'
+	a.download = 'Braian-Carranza-CV2025.pdf'
 	a.target = '_blank'
 	a.click()
 
