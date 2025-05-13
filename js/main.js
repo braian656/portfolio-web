@@ -5,7 +5,7 @@ const project = [
 		name: 'E-commerce 2',
 		img: 'img/e-commer-2.png',
 		txt: 'En este proyecto de ecommerce utilicé React como biblioteca principal para construir la interfaz de usuario de forma dinámica y eficiente. Implementé TypeScript para añadir tipado estático y mejorar la escalabilidad y mantenimiento del código. Como backend y base de datos, integré Firebase, lo que me permitió gestionar la autenticación de usuarios, almacenamiento de datos en tiempo real y hosting del proyecto, todo desde una única plataforma.',
-		technology: `<div class="content-icon"><img src="../icons/icons-1/tailwindcss.svg" alt=""></div>
+		technology: `<div class="content-icon"><img src="/icons/icons-1/tailwindcss.svg" alt=""></div>
 					<div class="content-icon"><img src="../icons/icons-1/react.svg" alt=""></div>
 					<div class="content-icon"><img src="../icons/icons-1/typescript.svg" alt=""></div>
 					<div class="content-icon"><img src="../icons/icons-1/firebase.svg" alt=""></div>`,
